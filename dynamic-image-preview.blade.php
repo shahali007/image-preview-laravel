@@ -57,6 +57,9 @@
                 // Show Image preview
                 getID("imagePreview_{{ $id }}").style.display = "block";
 
+                // Show file information (Name, size, dimension, error)
+                getID("fileinfo_{{ $id }}").style.display = "block";
+
                 // File name, size unit(KB, MB)
                 reader.onload = function(b) {
                     imagePreview.src = b.target.result;
